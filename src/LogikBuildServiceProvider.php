@@ -27,7 +27,7 @@ class LogikBuildServiceProvider extends ServiceProvider
             __DIR__ . '/../../../logiksuite/tabler/dist' => public_path('logikbuild/assets/@tabler'),
             __DIR__ . '/../public/logikbuild/assets' => public_path('logikbuild/assets'),
             __DIR__ . '/../public/logikbuild' => public_path('logikbuild'),
-        ], 'logiksuite-build');
+        ], 'logikbuild');
     }
 
 
