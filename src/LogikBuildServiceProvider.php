@@ -10,7 +10,7 @@ class LogikBuildServiceProvider extends ServiceProvider
 {
 
     protected $commands = [
-        ServeBuildCommand::class
+
     ];
 
     public function boot()
@@ -38,6 +38,6 @@ class LogikBuildServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->commands($this->commands);
+        //$this->commands($this->commands);
     }
 }
