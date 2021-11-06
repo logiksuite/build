@@ -20,7 +20,7 @@ class LogikBuildServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'logikbuild');
 
         $this->publishes([
-            __DIR__ . '/../../../vendor/tabler/tabler/dist' => public_path('@tabler'),
+            __DIR__ . '/../../../tabler/tabler/dist' => public_path('@tabler'),
         ], 'logiksuite-build');
     }
 
