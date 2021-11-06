@@ -130,10 +130,10 @@ use LogikSuite\Build\LogikBuild;
                   </span>
                 </a>
                 <div class="dropdown-menu{{ $menu_translation ?? '' }}">
-                  <a class="dropdown-item{{ $menu_translation_language ?? '' }}" href="/translation/language">
+                  <a class="dropdown-item{{ $menu_translation_language ?? '' }}" href="/logikbuild/translation/language">
                     Locales
                   </a>                  
-                  <a class="dropdown-item{{ $menu_translation_editor ?? '' }}" href="/translation/editor" >
+                  <a class="dropdown-item{{ $menu_translation_editor ?? '' }}" href="/logikbuild/translation/editor" >
                     Translations
                   </a>
                 </div>

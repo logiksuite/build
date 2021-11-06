@@ -140,7 +140,7 @@ class TranslationController extends Controller
         foreach ($aUniqueFileNames as $sFileName => $aFileInfo) {
             $sDisplayName = str_replace(".php", "", $sFileName);
 
-            $s .= "<div class=\"list-group-item language-item" . ($sDisplayName == $file ? " active" : "") . "\" style=\"cursor:pointer;\" onclick=\"document.location.href='/translation/editor/" . $sDisplayName . "'\">
+            $s .= "<div class=\"list-group-item language-item" . ($sDisplayName == $file ? " active" : "") . "\" style=\"cursor:pointer;\" onclick=\"document.location.href='/logikbuild/translation/editor/" . $sDisplayName . "'\">
             <div class=\"row align-items-center\">              
              <div class=\"col-auto\">              
              <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-file-code-2\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">
