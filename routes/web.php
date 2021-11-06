@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use LogikSuite\Build\Controllers\TranslationController;
-use LogikSuite\Build\LogikBuild;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,19 +14,19 @@ use LogikSuite\Build\LogikBuild;
 |
 */
 
-Route::group(['prefix','logikbuild'], function () {
+Route::prefix('logikbuild')->group(function () {
 
     Route::get('/', function () {
         return view('logikbuild:ui');
     });
 
 
-    Route::get('/translation/language', [TranslationController::class, 'languages']);
-    Route::get('/translation/editor/{file?}', [TranslationController::class, 'editor']);
-    Route::get('/translation/get/{file}/{key}/{locale}', [TranslationController::class, 'get']);
-    Route::post('/translation/get', [TranslationController::class, 'getBatch']);
-    Route::post('/translation/locale', [TranslationController::class, 'addLocale']);
-    Route::delete('/translation/locale', [TranslationController::class, 'removeLocale']);
-    Route::post('/translation/translate', [TranslationController::class, 'translate']);
-    Route::post('/translation/save', [TranslationController::class, 'save']);
+    Route::get('/translation/language', [TranslationController::class, 'languages'])->name('translation-language');
+    Route::get('/translation/editor/{file?}', [TranslationController::class, 'editor'])->name('translation-editor');
+    Route::get('/translation/get/{file}/{key}/{locale}', [TranslationController::class, 'get'])->name('translation-get');
+    Route::post('/translation/get', [TranslationController::class, 'getBatch'])->name('translation-get-batch');
+    Route::post('/translation/locale', [TranslationController::class, 'addLocale'])->name('translation-addlocale');
+    Route::delete('/translation/locale', [TranslationController::class, 'removeLocale'])->name('translation-removelocale');
+    Route::post('/translation/translate', [TranslationController::class, 'translate'])->name('translation-translate');
+    Route::post('/translation/save', [TranslationController::class, 'save'])->name('translation-save');
 });
