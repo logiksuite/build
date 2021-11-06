@@ -17,7 +17,11 @@ use LogikSuite\Build\Controllers\TranslationController;
 Route::prefix('logikbuild')->group(function () {
 
     Route::get('/', function () {
-        return view('logikbuild:ui');
+
+        return view('logikbuild::ui')
+        ->with('page_subtitle', 'LogikBuild')
+        ->with('page_title', 'Editor')
+        ->with('page_content', "");
     });
 
 
