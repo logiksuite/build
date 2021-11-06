@@ -32,7 +32,10 @@
         }
     },    
     "scripts": {      
-        "post-update-cmd": [
+        "post-package-install": [
+            "@php artisan vendor:publish --tag=logikbuild --ansi"
+        ],
+        "post-package-update": [
             "@php artisan vendor:publish --tag=logikbuild --ansi"
         ]        
     },
