@@ -17,7 +17,7 @@
         "php": "^7.3|^8.0",
         "ext-json": "*",
         "google/cloud-translate": "dev-master",
-        "tabler/tabler" : "dev-master"
+        "logiksuite/tabler" : "dev"
     },    
     "autoload": {
         "psr-4": {
