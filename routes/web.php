@@ -19,10 +19,10 @@ Route::prefix('logikbuild')->group(function () {
     Route::get('/', function () {
 
         return view('logikbuild::ui')
-        ->with('page_subtitle', 'LogikBuild')
-        ->with('page_title', 'Editor')
-        ->with('page_content', "");
-    });
+            ->with('page_subtitle', 'LogikBuild')
+            ->with('page_title', 'Editor')
+            ->with('page_content', "");
+    })->name("logikbuild");
 
 
     Route::get('/translation/language', [TranslationController::class, 'languages'])->name('translation-language');
