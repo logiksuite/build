@@ -136,7 +136,7 @@ class ServeBuildCommand extends Command
             '-S',
             $this->host() . ':' . $this->port(),
             '-t',
-            base_path('public/logikbuild'),
+            base_path('public'),
             base_path('vendor/logiksuite/build/server.php')
         ];
     }
