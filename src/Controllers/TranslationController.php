@@ -79,7 +79,7 @@ class TranslationController extends Controller
         $sJS = "";
 
 
-        return view('ui')
+        return view('logikbuild::ui')
             ->with('page_subtitle', 'Translations')
             ->with('page_title', 'Locales')
             ->with('page_content', $s)
@@ -225,7 +225,7 @@ class TranslationController extends Controller
             $sSelectedLanguages .= $sLocale;
         }
 
-        return view('ui')
+        return view('logikbuild::ui')
         ->with('page_subtitle', 'Translations')
         ->with('page_title', 'Editor')
         ->with('page_content', $s)
