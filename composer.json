@@ -33,10 +33,10 @@
     },    
     "scripts": {      
         "post-package-install": [
-            "@php artisan vendor:publish --tag=logikbuild --ansi"
+            "LogikSuite\\Build\\LogikBuild::postUpdate"
         ],
         "post-package-update": [
-            "@php artisan vendor:publish --tag=logikbuild --ansi"
+            "LogikSuite\\Build\\LogikBuild::postUpdate"
         ]        
     },
     "config": {
