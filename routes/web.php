@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\TranslationController;
 use Illuminate\Support\Facades\Route;
+use LogikSuite\Build\Controllers\TranslationController;
 use LogikSuite\Build\LogikBuild;
 
 /*
