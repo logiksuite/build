@@ -15,7 +15,7 @@ use LogikSuite\Build\LogikBuild;
 |
 */
 
-Route::groupe(['prefix','logikbuild'], function () {
+Route::group(['prefix','logikbuild'], function () {
 
     Route::get('/', function () {
         return view('logikbuild:ui');
