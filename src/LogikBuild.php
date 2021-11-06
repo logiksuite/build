@@ -3,6 +3,7 @@
 namespace LogikSuite\Build;
 
 use Exception;
+use Illuminate\Support\Facades\Artisan;
 
 class LogikBuild
 {
@@ -31,5 +32,12 @@ class LogikBuild
 
 
         return static::$_aModules;
+    }
+
+    public static function postUpdate()
+    {
+        $exitCode = Artisan::call('vendor:publish', [
+            '--tag' => 'logikbuild'
+        ]);
     }
 }
