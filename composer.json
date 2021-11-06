@@ -16,23 +16,9 @@
     "require": {
         "php": "^7.3|^8.0",
         "ext-json": "*",
-        "fruitcake/laravel-cors": "^2.0",        
-        "guzzlehttp/guzzle": "^7.0.1",
-        "laravel/framework": "^8.65",
-        "laravel/sanctum": "^2.11",
-        "laravel/tinker": "^2.5",
-        "google/cloud-translate": "dev-master"    
-    },
-    "require-dev": {
-        "facade/ignition": "^2.5",
-        "fakerphp/faker": "^1.9.1",
         "google/cloud-translate": "dev-master",
-        "laravel/sail": "^1.0.1",
-        "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^5.10",
-        "phpunit/phpunit": "^9.5.10",
         "tabler/tabler" : "dev-master"
-    },
+    },    
     "autoload": {
         "psr-4": {
             "LogikSuite\\Build\\": "src/"            
@@ -45,6 +31,11 @@
             ]
         }
     },    
+    "scripts": {      
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=logiksuite-build --ansi"
+        ]        
+    },
     "config": {
         "sort-packages": true
     },    
