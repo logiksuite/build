@@ -80,7 +80,7 @@ LogikBuild.modules.Translation = {
 
         $.ajax({
             type: 'POST',
-            url: '/translation/locale',
+            url: '/logikbuild/translation/locale',
             data: {
                 locale : sLocale
             },
@@ -96,7 +96,7 @@ LogikBuild.modules.Translation = {
 
         $.ajax({
             type: 'DELETE',
-            url: '/translation/locale',
+            url: '/logikbuild/translation/locale',
             data: {
                 locale : sLocale
             },
@@ -201,7 +201,7 @@ LogikBuild.modules.Translation = {
 
         $.ajax({
             type: 'POST',
-            url: '/translation/get',
+            url: '/logikbuild/translation/get',
             data: parameters,
             success: function(data, status, xhr) {
                 console.log(data);
@@ -247,7 +247,7 @@ LogikBuild.modules.Translation = {
 
         $.ajax({
             type: 'POST',
-            url: '/translation/save',
+            url: '/logikbuild/translation/save',
             data: parameters,
             success: function(data, status, xhr) {
                 // Show save notification
@@ -274,7 +274,7 @@ LogikBuild.modules.Translation = {
 
         $.ajax({
             type: 'POST',
-            url: '/translation/translate',
+            url: '/logikbuild/translation/translate',
             data: parameters,
             success: function(data, status, xhr) {     
                 console.log(data);           
