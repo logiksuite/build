@@ -32,11 +32,11 @@ use LogikSuite\Build\LogikBuild;
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
     <meta name="description" content=""/>    
     <!-- CSS files -->
-    <link href="/logikbuild/assets/@tabler/css/tabler.min.css" rel="stylesheet"/>
-    <link href="/logikbuild/assets/@tabler/css/tabler-flags.min.css" rel="stylesheet"/>
-    <link href="/logikbuild/assets/@tabler/css/tabler-payments.min.css" rel="stylesheet"/>
-    <link href="/logikbuild/assets/@tabler/css/tabler-vendors.min.css" rel="stylesheet"/>
-    <link href="/logikbuild/assets/@tabler/css/demo.min.css" rel="stylesheet"/>
+    <link href="/assets/logikbuild/assets/@tabler/css/tabler.min.css" rel="stylesheet"/>
+    <link href="/assets/logikbuild/assets/@tabler/css/tabler-flags.min.css" rel="stylesheet"/>
+    <link href="/assets/logikbuild/assets/@tabler/css/tabler-payments.min.css" rel="stylesheet"/>
+    <link href="/assets/logikbuild/assets/@tabler/css/tabler-vendors.min.css" rel="stylesheet"/>
+    <link href="/assets/logikbuild/assets/@tabler/css/demo.min.css" rel="stylesheet"/>
   </head>
   <body class="antialiased">
     <div class="wrapper">
@@ -383,13 +383,13 @@ use LogikSuite\Build\LogikBuild;
        
     <!-- Tabler Core -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="/logikbuild/assets/cryptojs/crypto.js"></script>
+    <script src="/assets/logikbuild/assets/cryptojs/crypto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/logikbuild/assets/@tabler/js/tabler.min.js"></script>
-    <script type="text/javascript" src="/logikbuild/assets/logikbuild/LogikBuild.js"></script>
-    <script type="text/javascript" src="/logikbuild/assets/logikbuild/Developer.js"></script>
-    <script type="text/javascript" src="/logikbuild/assets/logikbuild/Translation.js"></script>
+    <script type="text/javascript" src="/assets/logikbuild/assets/@tabler/js/tabler.min.js"></script>
+    <script type="text/javascript" src="/assets/logikbuild/assets/assets/logikbuild/assets/logikbuild.js"></script>
+    <script type="text/javascript" src="/assets/logikbuild/assets/assets/logikbuild/Developer.js"></script>
+    <script type="text/javascript" src="/assets/logikbuild/assets/assets/logikbuild/Translation.js"></script>
     <script type="text/javascript">
 
       $(document).ready(function() {
