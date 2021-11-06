@@ -327,21 +327,42 @@ use LogikSuite\Build\LogikBuild;
             Instructions
             </div>
 
-            <div class="mb-3">
-              <label class="form-label">Key Name</label>
-              <input type="text" class="form-control" id="translationKeyName" name="translationKeyName" placeholder="Translation Key Name">
-            </div>
-            <?php
+            <div class="row">
+              <div class="col-3">
+                Plurial forms
+              </div>
+              <div class="col-9">
+                <div class="mb-3">
+                  <label class="form-label">Key Name</label>
+                  <span class="dropdown" style="float:right;">
+                    <button class="btn btn-sm dropdown-toggle align-text-top show" data-bs-boundary="viewport" data-bs-toggle="dropdown" aria-expanded="true">Gender...</button>
+                    <div class="dropdown-menu dropdown-menu-end show" data-popper-placement="bottom-end" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(-81px, 38px);">
+                        <?php
+                          $aGenders = [
+                            'd' => 'Default',
+                            'm' => 'Masculin',
+                            'f' => 'Feminin',
+                          ];
+                          foreach ($aGenders as $sGenderCode => $sGenderName) {
+                              echo "<a class=\"dropdown-item\" href=\"javascript: alert('a');\">" . $sGenderName  . "</a>";
+                          }
 
-              $aSelectedLanguages = LogikBuild::getInstalledModules()[\LogikSuite\Translation\TranslationModule::class]["Languages"];
-            foreach ($aSelectedLanguages as $sLocale => $aLanguage) {
-                ?>
-            <div class="mb-3">
-              <label class="form-label" style="float:left;"><?php echo \LogikSuite\Translation\Locale::getLocaleName($sLocale); ?></label>
-              <span class="dropdown" style="float:right;">
-                              <button class="btn btn-sm dropdown-toggle align-text-top show" data-bs-boundary="viewport" data-bs-toggle="dropdown" aria-expanded="true">Translate from...</button>
-                              <div class="dropdown-menu dropdown-menu-end show" data-popper-placement="bottom-end" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(-81px, 38px);">
-                                  <?php
+                            ?>                                                                 
+                    </div>
+                  </span>
+                  <input type="text" class="form-control" id="translationKeyName" name="translationKeyName" placeholder="Translation Key Name">
+                </div>
+                <?php
+
+                  $aSelectedLanguages = LogikBuild::getInstalledModules()[\LogikSuite\Translation\TranslationModule::class]["Languages"];
+                foreach ($aSelectedLanguages as $sLocale => $aLanguage) {
+                    ?>
+                <div class="mb-3">
+                  <label class="form-label" style="float:left;"><?php echo \LogikSuite\Translation\Locale::getLocaleName($sLocale); ?></label>
+                  <span class="dropdown" style="float:right;">
+                                  <button class="btn btn-sm dropdown-toggle align-text-top show" data-bs-boundary="viewport" data-bs-toggle="dropdown" aria-expanded="true">Translate from...</button>
+                                  <div class="dropdown-menu dropdown-menu-end show" data-popper-placement="bottom-end" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(-81px, 38px);">
+                                    <?php
 
                                     foreach ($aSelectedLanguages as $sTranslateLocale => $aTranslateLanguage) {
                                         if ($sTranslateLocale != $sLocale) {
@@ -350,14 +371,16 @@ use LogikSuite\Build\LogikBuild;
                                     }
 
                                     ?>                                                                 
-                              </div>
-                            </span>
-              <textarea class="form-control" id="translationKeyValue_<?php echo $sLocale; ?>" name="translationKeyValue_<?php echo $sLocale; ?>" placeholder="<?php echo \LogikSuite\Translation\Locale::getLocaleName($sLocale); ?>" style="height:90px;"></textarea>
-            </div>
-                  <?php
-            }
+                                  </div>
+                                </span>
+                  <textarea class="form-control" id="translationKeyValue_<?php echo $sLocale; ?>" name="translationKeyValue_<?php echo $sLocale; ?>" placeholder="<?php echo \LogikSuite\Translation\Locale::getLocaleName($sLocale); ?>" style="height:90px;"></textarea>
+                </div>
+                      <?php
+                }
 
-            ?>
+                ?>
+              </div>
+            </div>
             <input type="hidden" id="translationFile" value=""/>
             <input type="hidden" id="translationLocales" value="{{ $selected_languages ?? '' }}"/>
           </div>
