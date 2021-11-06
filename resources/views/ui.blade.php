@@ -329,7 +329,13 @@ use LogikSuite\Build\LogikBuild;
 
             <div class="row">
               <div class="col-3">
-                Plurial forms
+                Plurial forms                
+                <select style="height:100%;" multiple>
+                    <option selected>Default</option>
+                    <option>None</option>
+                    <option>One</option>
+                    <option>Many</option>
+                </select>
               </div>
               <div class="col-9">
                 <div class="mb-3">
