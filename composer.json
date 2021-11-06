@@ -30,15 +30,7 @@
                 "LogikSuite\\Build\\LogikBuildServiceProvider"
             ]
         }
-    },    
-    "scripts": {      
-        "post-package-install": [
-            "LogikSuite\\Build\\LogikBuild::postUpdate"
-        ],
-        "post-package-update": [
-            "LogikSuite\\Build\\LogikBuild::postUpdate"
-        ]        
-    },
+    },        
     "config": {
         "sort-packages": true
     },    
