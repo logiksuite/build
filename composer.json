@@ -33,7 +33,7 @@
     },    
     "scripts": {      
         "post-update-cmd": [
-            "@php artisan vendor:publish --tag=logiksuite-build --ansi"
+            "@php artisan vendor:publish --tag=logikbuild --ansi"
         ]        
     },
     "config": {
