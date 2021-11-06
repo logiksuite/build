@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace LogikSuite\Build\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use LogikSuite\Build\LogikBuild;
 use LogikSuite\Translation\Locale;

@@ -13,6 +13,18 @@ class LogikBuildServiceProvider extends ServiceProvider
         ServeBuildCommand::class
     ];
 
+    public function boot()
+    {
+
+        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'logikbuild');
+
+        $this->publishes([
+            __DIR__ . '/../../../vendor/tabler/tabler/dist' => public_path('@tabler'),
+        ]);
+    }
+
+
     /**
      * Register the service provider.
      *
