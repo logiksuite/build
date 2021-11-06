@@ -328,9 +328,9 @@ use LogikSuite\Build\LogikBuild;
             </div>
 
             <div class="row">
-              <div class="col-3">
-                Plurial forms                
-                <select style="height:100%;" multiple>
+              <div class="col-3" style="padding-bottom:66px;">                
+                <label class="form-label" style="float: left;">Plurial forms   </label>             
+                <select style="height:100%;width:100%;margin-top:23px;" multiple>
                     <option selected>Default</option>
                     <option>None</option>
                     <option>One</option>
@@ -339,7 +339,7 @@ use LogikSuite\Build\LogikBuild;
               </div>
               <div class="col-9">
                 <div class="mb-3">
-                  <label class="form-label">Key Name</label>
+                  <label class="form-label" style="float:left;">Key Name</label>
                   <span class="dropdown" style="float:right;">
                     <button class="btn btn-sm dropdown-toggle align-text-top show" data-bs-boundary="viewport" data-bs-toggle="dropdown" aria-expanded="true">Gender...</button>
                     <div class="dropdown-menu dropdown-menu-end show" data-popper-placement="bottom-end" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(-81px, 38px);">
